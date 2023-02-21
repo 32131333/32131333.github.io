@@ -14,7 +14,7 @@
        try {
          document.querySelector("button").addEventListener("click", async(event)=>{
            const cho = document.querySelector("input");
-           alert(`Ваш уровень составляет ${cho.value}`);
+           alert(`Ваш уровень составляет ${Math.floor(cho.value)}`);
            document.location.reload();
          });
         } catch (e) {
