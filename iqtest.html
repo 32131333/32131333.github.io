@@ -7,15 +7,19 @@
   <body>
     <h1>Всевеликий IQ тест</h1>
     <h3>Узнай результат</h3>
-    <br>
+    <hr>
     <input type="text" placeholder="Ваш текст"></input>
     <button>Завершить тест</button>
     <script>
-       document.querySelector("button").addEventListener("click", async(event)=>{
-            const cho = document.querySelector("input");
-            alert(`Ваш уровень составляет ${cho.value}`);
-            document.location.reload();
-       });
+       try {
+         document.querySelector("button").addEventListener("click", async(event)=>{
+           const cho = document.querySelector("input");
+           alert(`Ваш уровень составляет ${cho.value}`);
+           document.location.reload();
+         });
+        } catch (e) {
+         alert(e.stack());
+        };
     </script>
   </body>
 </html>
