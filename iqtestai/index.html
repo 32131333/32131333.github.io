@@ -22,19 +22,13 @@
           const cho = document.querySelector("input");
           const val = parseInt(cho.value);
           if (isNaN(val)) {
-            alert("Пожалуйста, введите число!");
             Swal.fire({
              icon: 'error',
              title: 'Ошибка!',
-             text: 'Пожалуйста, введите число.',
-             confirmButtonText: 'OK',
-             customClass: {
-              container: 'my-swal-container',
-              popup: 'my-swal-popup',
-              title: 'my-swal-title',
-              text: 'my-swal-text',
-              confirmButton: 'my-swal-button'
-             }
+             text: `Введите числовое значение`,
+             confirmButtonText: 'OK'
+            }).then(() => {
+             document.location.reload();
             });
           } else {
             Swal.fire({
