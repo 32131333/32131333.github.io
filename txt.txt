@@ -1,0 +1,2 @@
+Узнайте о <a href="./свиньяbot/recommend.txt">рекомендациях</a>
+Тест [в](./свиньяbot/recommend.txt)
